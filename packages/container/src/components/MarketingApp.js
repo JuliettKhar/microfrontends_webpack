@@ -15,7 +15,6 @@ export default () => {
                 if (pathname !== location.pathname) {
                     history.push(location.pathname)
                 }
-                console.log(location)
             }
         });
 

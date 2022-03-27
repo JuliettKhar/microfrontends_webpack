@@ -17,13 +17,10 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
        onParentNavigate(location) {
             if (history.location.pathname !== location.pathname) {
                 history.push(location.pathname)
-                console.log('conyaine just navig', location)
             }
        }
     }
 }
-
-console.log(process.env.NODE_ENV, 'env')
 
 if (process.env.NODE_ENV === 'development') {
     const devRoot = document.querySelector('#marketing-dev-root')

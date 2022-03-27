@@ -17,7 +17,6 @@ const mount = (el, {onSignIn, onNavigate, defaultHistory, initialPath }) => {
        onParentNavigate(location) {
             if (history.location.pathname !== location.pathname) {
                 history.push(location.pathname)
-                console.log('conyaine just navig', location)
             }
        }
     }
